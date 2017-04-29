@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    >
+
+    <com.czp.library.ArcProgress
+        android:id="@+id/average_temp_progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:radius="50dp"
+        app:arcCapRound="false"
+        app:progressStyle="arc"
+        app:progressColor="@color/blue"
+        android:layout_alignParentStart="true"
+        >
+    </com.czp.library.ArcProgress>
+
+    <LinearLayout
+        android:id="@+id/above_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="40dp">
+
+        <TextView
+            android:id="@+id/max_temp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max_temperature"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/yesterday_max_temp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/init_temperature"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/above_layout"
+        android:layout_marginEnd="40dp">
+
+        <TextView
+            android:id="@+id/min_temp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/min_temperature"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/yesterday_min_temp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/init_temperature"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

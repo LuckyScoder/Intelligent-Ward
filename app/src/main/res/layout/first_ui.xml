@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violet">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/first_ui_top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----------昨日数据统计----------"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+            <include layout="@layout/first_ui_info_yesterday" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="----------当月数据统计----------"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"/>
+
+            <include layout="@layout/first_ui_info_month" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

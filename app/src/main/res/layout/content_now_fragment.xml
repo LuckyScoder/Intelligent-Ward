@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="@color/mediumseagreen"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="10℃"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="20%rh"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="控制风扇转速"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:id="@+id/seekBarValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前数值为："
+            android:textSize="30dp"
+            />
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置提醒"
+            android:textSize="30dp"
+            />
+
+        <CheckBox
+            android:id="@+id/temperature_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置温度提醒"
+            android:textSize="25dp"
+            />
+        <Spinner
+            android:id="@+id/temperature_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <CheckBox
+            android:id="@+id/humidity_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置湿度提醒"
+            android:textSize="25dp"
+            />
+        <Spinner
+            android:id="@+id/humidity_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </LinearLayout>
+</LinearLayout>

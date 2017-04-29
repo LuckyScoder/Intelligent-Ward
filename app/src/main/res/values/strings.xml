@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">智能家居</string>
+    <string name="max_temperature">最高温度：</string>
+    <string name="min_temperature">最低温度：</string>
+    <string name="average_temperature">平均温度</string>
+    <string name="init_temperature">20℃</string>
+
+    <string name="max_humidity">最高湿度：</string>
+    <string name="min_humidity">最低湿度：</string>
+    <string name="average_humidity">平均湿度</string>
+    <string name="init_humidity">20%</string>
+
+    <string name="account">账户</string>
+    <string name="settings">设置</string>
+    <string name="exit">退出</string>
+</resources>
